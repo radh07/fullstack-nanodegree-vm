@@ -17,6 +17,7 @@ def testCount():
     deleteMatches()
     deletePlayers()
     c = countPlayers()
+    #print "countPlayers = ", c
     if c == '0':
         raise TypeError(
             "countPlayers should return numeric zero, not string '0'.")
@@ -153,3 +154,23 @@ if __name__ == '__main__':
     testReportMatches()
     testPairings()
     print "Success!  All tests pass!"
+    # deleteMatches()
+    # deletePlayers()
+    # registerPlayer("A")
+    # registerPlayer("B")
+    # registerPlayer("C")
+    # registerPlayer("D")
+    # registerPlayer("E")
+    # registerPlayer("F")
+    # registerPlayer("G")
+    # registerPlayer("H")
+    # reportMatch(57, 58) # A,B
+    # reportMatch(59, 60) # C,D
+    # reportMatch(61, 62) # E,F
+    # reportMatch(63, 64) # G,H
+
+    # reportMatch(57, 59) # A,C
+    # reportMatch(61, 63) # E, G
+    # reportMatch(58, 60) # B,D
+    # reportMatch(62, 64) #F,H
+    # swissPairings()
